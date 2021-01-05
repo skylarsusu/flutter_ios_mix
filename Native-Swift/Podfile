@@ -1,0 +1,12 @@
+
+platform :ios, '9.0'
+use_frameworks!
+
+
+flutter_application_path = '../Native-iOS/flutter_module'
+  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+
+
+target 'Native-Swift' do
+pod 'AFNetworking', '~> 2.6'
+end

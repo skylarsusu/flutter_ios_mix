@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <Flutter/Flutter.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : FlutterAppDelegate
 
-@property (readonly, strong) NSPersistentContainer *persistentContainer;
-
-- (void)saveContext;
 
 
 @end

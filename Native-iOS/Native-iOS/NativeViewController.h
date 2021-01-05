@@ -10,7 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+@protocol NativeViewControllerDelegate <NSObject>
+
+- (void)didTapIncrementButton;
+
+@end
+
+
 @interface NativeViewController : UIViewController
+
+@property (strong, nonatomic) id<NativeViewControllerDelegate> delegate;
+- (void) didReceiveIncrement;
 
 @end
 

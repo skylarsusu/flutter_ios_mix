@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import Flutter
+
+class MyFlutterView: NSObject, FlutterPlatformView {
+    let label = UILabel()
+    
+    init(_ frame: CGRect, viewId: Int64, args: Any?, messenger: FlutterBinaryMessenger) {
+        label.text = "我是ios View"
+    }
+    
+    func view() -> UIView {
+        return label
+    }
+    
+}

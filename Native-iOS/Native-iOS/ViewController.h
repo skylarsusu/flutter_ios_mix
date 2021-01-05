@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Flutter/Flutter.h>
+#import "NativeViewController.h"
 
-@interface ViewController : UIViewController
+@protocol NativeViewControllerDelegate;
+
+@interface ViewController : UIViewController <NativeViewControllerDelegate>
 
 
 @end

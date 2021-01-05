@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,13 @@
 		0A2B4F0625A2F506008B8708 /* Native_Swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B4F0425A2F506008B8708 /* Native_Swift.xcdatamodeld */; };
 		0A2B4F0825A2F509008B8708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2B4F0725A2F509008B8708 /* Assets.xcassets */; };
 		0A2B4F0B25A2F509008B8708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2B4F0925A2F509008B8708 /* LaunchScreen.storyboard */; };
+		0A2B4F1425A30222008B8708 /* MyFlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B4F1325A30222008B8708 /* MyFlutterView.swift */; };
+		0A2B4F1625A3036D008B8708 /* MyFlutterViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2B4F1525A3036D008B8708 /* MyFlutterViewFactory.swift */; };
+		D946EBB2D136AF5AB609EF65 /* Pods_Native_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0905FD333352C9E3A394F69 /* Pods_Native_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08253E08364B0358FFC2D642 /* Pods-Native-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Native-Swift.debug.xcconfig"; path = "Target Support Files/Pods-Native-Swift/Pods-Native-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		0A2B4EF825A2F506008B8708 /* Native-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Native-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2B4EFB25A2F506008B8708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A2B4EFD25A2F506008B8708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		0A2B4F0725A2F509008B8708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A2B4F0A25A2F509008B8708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A2B4F0C25A2F509008B8708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2B4F1325A30222008B8708 /* MyFlutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlutterView.swift; sourceTree = "<group>"; };
+		0A2B4F1525A3036D008B8708 /* MyFlutterViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlutterViewFactory.swift; sourceTree = "<group>"; };
+		F0905FD333352C9E3A394F69 /* Pods_Native_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Native_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE05CF71214100DCE8D02337 /* Pods-Native-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Native-Swift.release.xcconfig"; path = "Target Support Files/Pods-Native-Swift/Pods-Native-Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D946EBB2D136AF5AB609EF65 /* Pods_Native_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 			children = (
 				0A2B4EFA25A2F506008B8708 /* Native-Swift */,
 				0A2B4EF925A2F506008B8708 /* Products */,
+				B7A80D2B569C416796290157 /* Pods */,
+				7B5FC253126D43887975AC76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +77,27 @@
 				0A2B4F0925A2F509008B8708 /* LaunchScreen.storyboard */,
 				0A2B4F0C25A2F509008B8708 /* Info.plist */,
 				0A2B4F0425A2F506008B8708 /* Native_Swift.xcdatamodeld */,
+				0A2B4F1325A30222008B8708 /* MyFlutterView.swift */,
+				0A2B4F1525A3036D008B8708 /* MyFlutterViewFactory.swift */,
 			);
 			path = "Native-Swift";
+			sourceTree = "<group>";
+		};
+		7B5FC253126D43887975AC76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0905FD333352C9E3A394F69 /* Pods_Native_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7A80D2B569C416796290157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08253E08364B0358FFC2D642 /* Pods-Native-Swift.debug.xcconfig */,
+				FE05CF71214100DCE8D02337 /* Pods-Native-Swift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A2B4F0F25A2F509008B8708 /* Build configuration list for PBXNativeTarget "Native-Swift" */;
 			buildPhases = (
+				D0AFD1FB22AE985E1B50E057 /* [CP] Check Pods Manifest.lock */,
 				0A2B4EF425A2F506008B8708 /* Sources */,
 				0A2B4EF525A2F506008B8708 /* Frameworks */,
 				0A2B4EF625A2F506008B8708 /* Resources */,
+				5D08CC00C5449D7E9CFBC4B7 /* [CP] Embed Pods Frameworks */,
+				0A2B4F1225A2F629008B8708 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -136,6 +169,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A2B4F1225A2F629008B8708 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed\n\n";
+		};
+		5D08CC00C5449D7E9CFBC4B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Native-Swift/Pods-Native-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Native-Swift/Pods-Native-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Native-Swift/Pods-Native-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0AFD1FB22AE985E1B50E057 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Native-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A2B4EF425A2F506008B8708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +236,8 @@
 				0A2B4F0625A2F506008B8708 /* Native_Swift.xcdatamodeld in Sources */,
 				0A2B4F0025A2F506008B8708 /* ViewController.swift in Sources */,
 				0A2B4EFC25A2F506008B8708 /* AppDelegate.swift in Sources */,
+				0A2B4F1425A30222008B8708 /* MyFlutterView.swift in Sources */,
+				0A2B4F1625A3036D008B8708 /* MyFlutterViewFactory.swift in Sources */,
 				0A2B4EFE25A2F506008B8708 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +298,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -264,6 +359,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -286,9 +382,11 @@
 		};
 		0A2B4F1025A2F509008B8708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08253E08364B0358FFC2D642 /* Pods-Native-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Native-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,9 +401,11 @@
 		};
 		0A2B4F1125A2F509008B8708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE05CF71214100DCE8D02337 /* Pods-Native-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Native-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

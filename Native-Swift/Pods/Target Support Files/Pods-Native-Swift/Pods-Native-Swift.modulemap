@@ -1,0 +1,6 @@
+framework module Pods_Native_Swift {
+  umbrella header "Pods-Native-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
