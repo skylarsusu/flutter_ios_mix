@@ -1,0 +1,6 @@
+[submodule "Native_iOS/flutter_module"]
+	path = Native_iOS/flutter_module
+	url = https://github.com/skylarsusu/flutter_module.git
+[submodule "Native-iOS/flutter_module"]
+	path = Native-iOS/flutter_module
+	url = https://github.com/skylarsusu/flutter_module.git
